@@ -1,0 +1,25 @@
+
+.wrapper {
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	border:1px solid grey;
+	border-radius: 1rem;
+	padding:1rem;
+	margin-bottom: 1rem;
+}
+
+.nameSpan {
+	font-weight: bold;
+}
+
+.activo {
+color: green;
+}
+.role{
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	background-color:aqua;
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.5rem;
+}
