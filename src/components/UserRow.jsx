@@ -1,11 +1,17 @@
+import { useState } from 'react';
 import UserRole from './UserRole';
 import style from './UserRow.module.css';
 import UserStatus from './UserStatus';
+
 const UserRow = ({ name, active, role }) => {
 
-  let activeState = undefined;
-
   console.log('  - UserRow');
+
+  const state = useState(active);
+
+  const activeState = state[0];
+  const setActiveState = state[1]
+  console.log(state);
   return (
     <div className={style.wrapper}>
       <div className={style.name}>
@@ -19,11 +25,9 @@ const UserRow = ({ name, active, role }) => {
       </div>
       <div className={style.action}>
         <button onClick={() => {
-          activeState = !activeState;
-          console.log(active);
-        }}
-        >
-          {activeState ? 'desactivar' : 'activar'}</button>
+          setActiveState(!activeState);
+          console.log(activeState);
+        }}>{activeState ? 'desactivar' : 'activar'}</button>
       </div>
 
     </div>
