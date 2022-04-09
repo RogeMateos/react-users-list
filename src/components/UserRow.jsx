@@ -1,9 +1,22 @@
+import UserRole from './UserRole';
 import style from './UserRow.module.css';
-const UserRow = ({name,active,role} ) => (
-  <div className={style.wrapper}>
-         <span className={style.nameSpan}>{name}</span>
-         <span className={style.activo}>{active}</span>
-         <span className={style.role}>{role}</span> 
+import UserStatus from './UserStatus';
+const UserRow = ({ name, active, role }) => {
+
+
+  return (
+    <div className={style.wrapper}>
+      <div className={style.name}>
+        <span>{name}</span>
       </div>
-);
+      <div className={style.status}>
+        <UserStatus active={active} />
+      </div>
+      <div className={style.role}>
+        <UserRole role={role} />
+      </div>
+
+    </div>
+  );
+};
 export default UserRow;

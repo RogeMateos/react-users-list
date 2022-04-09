@@ -2,26 +2,26 @@ import Title from "./components/Title";
 import UsersList from "./components/UsersList";
 const USERS = [
   {
-    name:'Pafblo Castellanos',
-    active:'Activo',
-    role:'profesor'
+    name: 'Pablo Castellanos',
+    active: true,
+    role: 'teacher'
   },
   {
-    name:'jose Miguel',
-    active:'Activo',
-    role:'Alumno'
+    name: 'jose Miguel',
+    active: true,
+    role: 'techer'
   },
   {
-    name:'Roge Mateos',
-    active:'Activo',
-    role:'profesor'
+    name: 'Roge Mateos',
+    active: false,
+    role: 'student'
   }
- 
+
 ]
 
-const App = ()=> (
-  <UsersList users= {USERS}>
+const App = () => (
+  <UsersList users={USERS}>
     <Title>Listado de usuarios</Title>
   </UsersList>
- );
- export default App;
+);
+export default App;
