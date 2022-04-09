@@ -15,6 +15,14 @@ const UserRow = ({ name, active, role }) => {
       <div className={style.role}>
         <UserRole role={role} />
       </div>
+      <div className={style.action}>
+        <button onClick={() => {
+          active = !active;
+          console.log(active);
+        }}
+        >
+          {active ? 'desactivar' : 'activar'}</button>
+      </div>
 
     </div>
   );

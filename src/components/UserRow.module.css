@@ -9,15 +9,14 @@
 }
 
 .name {
-	width: 60%;
+	width: 40%;
+	font-weight: bold;
 }
 .status,
-.role {
+.role,
+.action {
 	width: 20%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.name span {
-	font-weight: bold;
 }
