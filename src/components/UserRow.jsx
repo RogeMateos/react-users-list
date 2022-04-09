@@ -7,11 +7,10 @@ const UserRow = ({ name, active, role }) => {
 
   console.log('  - UserRow');
 
-  const state = useState(active);
+  const [activeState, setActiveState] = useState(active);
 
-  const activeState = state[0];
-  const setActiveState = state[1]
-  console.log(state);
+
+
   return (
     <div className={style.wrapper}>
       <div className={style.name}>
