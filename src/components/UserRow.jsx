@@ -3,7 +3,7 @@ import style from './UserRow.module.css';
 import UserStatus from './UserStatus';
 const UserRow = ({ name, active, role }) => {
 
-
+  console.log('  - UserRow');
   return (
     <div className={style.wrapper}>
       <div className={style.name}>
