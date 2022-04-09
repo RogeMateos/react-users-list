@@ -3,6 +3,8 @@ import style from './UserRow.module.css';
 import UserStatus from './UserStatus';
 const UserRow = ({ name, active, role }) => {
 
+  let activeState = undefined;
+
   console.log('  - UserRow');
   return (
     <div className={style.wrapper}>
@@ -10,18 +12,18 @@ const UserRow = ({ name, active, role }) => {
         <span>{name}</span>
       </div>
       <div className={style.status}>
-        <UserStatus active={active} />
+        <UserStatus active={activeState} />
       </div>
       <div className={style.role}>
         <UserRole role={role} />
       </div>
       <div className={style.action}>
         <button onClick={() => {
-          active = !active;
+          activeState = !activeState;
           console.log(active);
         }}
         >
-          {active ? 'desactivar' : 'activar'}</button>
+          {activeState ? 'desactivar' : 'activar'}</button>
       </div>
 
     </div>
