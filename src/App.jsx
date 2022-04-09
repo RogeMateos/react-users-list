@@ -9,7 +9,7 @@ const USERS = [
   {
     name: 'jose Miguel',
     active: true,
-    role: 'techer'
+    role: 'teacher'
   },
   {
     name: 'Roge Mateos',
