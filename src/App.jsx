@@ -19,12 +19,9 @@ const USERS = [
 
 ]
 
-const App = () => {
-  console.log('APP')
-  return (
-    <UsersList users={USERS}>
-      <Title>Listado de usuarios</Title>
-    </UsersList>
-  )
-};
+const App = () => (
+  <UsersList users={USERS}>
+    <Title>Listado de usuarios</Title>
+  </UsersList>
+)
 export default App;

@@ -3,7 +3,7 @@ import style from './UsersList.module.css';
 
 
 const UsersList = ({ users, children }) => {
-  console.log('- UserList');
+
   const usersRendered =
     users.length > 0 ? users.map(user => (
       <UserRow key={user.name} {...user} />

@@ -5,7 +5,7 @@ import UserStatus from './UserStatus';
 
 const UserRow = ({ name, active, role }) => {
 
-  console.log('  - UserRow');
+
 
   const [activeState, setActiveState] = useState(active);
 
