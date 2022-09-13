@@ -7,7 +7,7 @@ const ROLE_STYLES = {
 };
 
 const UserRole = ({ role }) => {
-
+  console.log('Render UserRole');
 
   const [roleName, roleClassname] = ROLE_STYLES[role] || ROLE_STYLES.other;
 
